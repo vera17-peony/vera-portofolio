@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  .judul-opini {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .opini-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .opini-card {
+    background: #eee;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+  }
+  
+  .opini-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .opini-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .judul {
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .modal:target {
+    display: flex;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .modal-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: slideUp 0.3s ease;
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .close:hover {
+    color: red;
+  }

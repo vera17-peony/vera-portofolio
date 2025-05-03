@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+  <!-- Di <head> -->
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Warna latar belakang, bisa diganti */
+  }
+
+  .sosmed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    max-width: 300px;
+    background: #f0d5d4;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .sosmed-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    background-color: #f7cac9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .sosmed-item i {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .email i { background: #b3cee5; }
+  .instagram i { background: #b3cee5; }
+  .tiktok i { background: #b3cee5; }
+
+  .sosmed-item span {
+    font-size: 16px;
+  }
+
+  .sosmed-item:hover {
+    opacity: 0.85;
+    transform: translateX(5px);
+  }
+
+  @media (max-width: 500px) {
+    .sosmed-container {
+      max-width: 90%;
+    }
+
+    .sosmed-item span {
+      font-size: 14px;
+    }
+  }
+</style>
+<body>
+<!-- Di <body> -->
+<div class="sosmed-container">
+  <a class="sosmed-item email" href="https://mail.google.com/mail/?view=cm&to=veraameliasafitri988@gmail.com" target="_blank">
+    <i class="fas fa-envelope"></i>
+    <span>veraameliasafitri988@gmail.com</span>
+  </a>
+  <a class="sosmed-item instagram" href="https://instagram.com/vrls_qk" target="_blank">
+    <i class="fab fa-instagram"></i>
+    <span>@vrls_qk</span>
+  </a>
+  <a class="sosmed-item tiktok" href="https://www.tiktok.com/@vermel99" target="_blank">
+    <i class="fab fa-tiktok"></i>
+    <span>@vermel99</span>
+  </a>
+</div>
+</body>
+</html>
